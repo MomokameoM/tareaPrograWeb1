@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Preferencias musicales</title>
+</head>
+<body>
+      
+      <div class="container-fluid p-5", style="font-family: 'Times New Roman', Times, serif;">
+        
+        <div class="d-flex justify-content-between align-items-center">
+            <h1><b>Preferencias musicales</b></h1>
+            <a href="../index.html">
+                <button class="btn btn-outline-danger">Regresar</button>
+            </a>
+        </div>
+        <div class="container text-start ms-0">
+            <p>Genero musical favorito: <input type="checkbox" name="genero" value="pop"> Pop <input type="checkbox" name="genero" value="jazz"> Jazz <input type="checkbox" name="genero" value="rock"> Rock</p>
+            <p>Edad: <input type="radio" name="edad" value="12-17"> 12-17 <input type="radio" name="edad" value="18-35"> 18-35 <input type="radio" name="edad" value="36-65"> 36-65 <input type="radio" name="edad" value="65+"> 65+</p>
+            <p>Grupos y cantantes que te gustan: 
+            <!-- CON OPCION MULTIPLE
+             <fieldset>
+                    <legend>Rock</legend>
+                    <label><input type="checkbox" name="grupos[]" value="queen"> Queen</label><br>
+                    <label><input type="checkbox" name="grupos[]" value="ledzeppelin"> Led Zeppelin</label><br>
+                    <label><input type="checkbox" name="grupos[]" value="pinkfloyd"> Pink Floyd</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pop</legend>
+                    <label><input type="checkbox" name="grupos[]" value="madonna"> Madonna</label><br>
+                    <label><input type="checkbox" name="grupos[]" value="michael jackson"> Michael Jackson</label><br>
+                    <label><input type="checkbox" name="grupos[]" value="lady gaga"> Lady Gaga</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Jazz</legend>
+                    <label><input type="checkbox" name="grupos[]" value="miles davis"> Miles Davis</label><br>
+                    <label><input type="checkbox" name="grupos[]" value="john coltrane"> John Coltrane</label><br>
+                    <label><input type="checkbox" name="grupos[]" value="elton john"> Elton John</label>
+                </fieldset>    
+            -->
+            <!-- SIN SELECT MULTIPLE -->
+            <select name="grupos" id="grupos">
+                <optgroup label="Rock" >
+                    <option value="queen">Queen</option>
+                    <option value="ledzeppelin">Led Zeppelin</option>
+                    <option value="pinkfloyd">Pink Floyd</option>
+                </optgroup>
+                <optgroup label="Pop">
+                    <option value="madonna">Madonna</option>
+                    <option value="michael jackson">Michael Jackson</option>
+                    <option value="lady gaga">Lady Gaga</option>
+                </optgroup>
+                <optgroup label="Jazz">
+                    <option value="miles davis">Miles Davis</option>
+                    <option value="john coltrane">John Coltrane</option>
+                    <option value="elton john">Elton John</option>
+                </optgroup>
+            </select></p>
+        </div>
+          <p><input type="submit" value="Enviar"></p>
+    </div>  
+    </div>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

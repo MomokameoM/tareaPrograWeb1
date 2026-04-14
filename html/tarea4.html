@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Formulario</title>
+</head>
+<body>
+      
+      <div class="container-fluid p-5", style="font-family: 'Times New Roman', Times, serif;">
+        
+        <div class="d-flex justify-content-between align-items-center">
+           <h1><b>Formulario de registro</b></h1>
+            <a href="../index.html">
+                <button class="btn btn-outline-danger">Regresar</button>
+            </a>
+        </div>
+        <div class="container text-start ms-0">
+        <p>Nombre: <input type="text" name="nombre" id="nombre">    </p>
+        <p>Apellidos: <input type="text" name="apellido" id="apellido">    </p>
+        <div class="col-8 pb-3">Sexo: <input type="radio" name="sexo" id="masculino" value="masculino"> Masculino
+        <input type="radio" name="sexo" id="femenino" value="femenino"> Femenino</div>
+        <p>Correo electronico: <input type="email" name="correo" id="correo">    </p>
+        <p><input type="checkbox" name="info" id="info"> Deseo recibir información sobre novedades y ofertas</p>
+        <p><input type="checkbox" name="info" id="info"> Declaro haber leido bien las condiciones generales del programa y la normativa sobre protección de datos.</p>
+        
+    </div>  
+        
+        
+        
+        <p><input type="submit" value="Enviar"></p>
+
+    </div>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
